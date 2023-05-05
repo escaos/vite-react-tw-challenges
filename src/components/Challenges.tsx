@@ -42,36 +42,6 @@ const CHALLENGES: IChallenge[] = [
     image: '/',
     github: '/',
   },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
 ];
 
 export const Challenges = () => {

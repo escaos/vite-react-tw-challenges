@@ -17,6 +17,9 @@ export const Layout = ({ children }: LayoutProps) => {
       </a>
 
       <main>{children}</main>
+      <footer className="my-4 md:fixed md:bottom-0">
+        &copy;{` ${new Date().getFullYear()} - Edison Sanchez.  All rights reserved.`}
+      </footer>
     </div>
   );
 };
