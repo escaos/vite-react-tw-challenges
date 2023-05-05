@@ -1,26 +1,18 @@
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Home from "@/pages/Home";
-import AgeCalculator from "@/pages/AgeCalculator";
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
+import Home from '@/pages/Home';
+import AgeCalculator from '@/pages/AgeCalculator';
+import { Layout } from './components/Layout';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="App background-animation">
       <BrowserRouter>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/age-calculator">Age Calculator</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/age-calculator" element={<AgeCalculator />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/age-calculator" element={<AgeCalculator />} />
+          </Routes>
+        </Layout>
       </BrowserRouter>
     </div>
   );

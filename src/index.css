@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add the following styles for the Background component */
+.background-animation {
+  @apply w-screen min-h-screen flex items-center justify-center;
+  background-image: linear-gradient(-45deg, #2a234e 0%, #2a244a 25%, #131024 51%, #2a234e 100%);
+  background-size: 300% 300%;
+  animation: AnimateBG 10s ease infinite;
+}
+
+.glass-card {
+  @apply bg-opacity-70 shadow-xl rounded-lg flex flex-col justify-center items-center;
+  background-color: rgba(39, 39, 104, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+}
+
+.circle {
+  @apply w-40 h-40 rounded-full bg-opacity-70;
+  background-image: linear-gradient(-45deg, #000 0%, #444 25%, #888 51%, #fff 100%);
+  border: 1px solid rgba(39, 39, 104, 1);
+}
+
+.github-button {
+  background-color: #21262d;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  color: #fff;
+  box-shadow: 0 0 6px #000;
+  border-radius: 6px;
+  cursor: pointer;
+  top: 1rem;
+  position: fixed;
+  right: 1rem;
+  padding: 0.4rem;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -57,6 +105,17 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--gradient-45deg);
+  background-size: 300% 300%;
+  animation: var(--animate-bg);
 }
 
 @media (prefers-color-scheme: light) {
