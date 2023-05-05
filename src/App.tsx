@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
-import Home from '@/pages/Home';
 import AgeCalculator from '@/pages/AgeCalculator';
+import Home from '@/pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 
 const App: React.FC = () => {
