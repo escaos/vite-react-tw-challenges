@@ -1,48 +1,5 @@
-import { IChallenge } from '@/shared/types/Challenges.types';
+import { CHALLENGES } from '@/shared/constants/Challenges';
 import { Link } from 'react-router-dom';
-
-const CHALLENGES: IChallenge[] = [
-  {
-    title: 'Age Calculator',
-    description: 'Calc the age based on the date of birth.',
-    difficulty: 'easy',
-    updatedAt: new Date('2023-05-04'),
-    tags: ['html', 'css', 'ts'],
-    url: '/age-calculator',
-    image: '/',
-    github: '/',
-  },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
-  {
-    title: 'Soon ...',
-    description: 'More Projects everyday.',
-    difficulty: 'easy',
-    updatedAt: new Date(),
-    tags: ['ts'],
-    url: '/',
-    image: '/',
-    github: '/',
-  },
-];
 
 export const Challenges = () => {
   return (
